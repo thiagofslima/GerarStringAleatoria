@@ -32,8 +32,8 @@ namespace GerarStringAleatoria
 
         private void btnGerar_Click(object sender, EventArgs e)
         {
-            var rand = new Random(10);
-            lblResultado.Text = GerarStringAleatoria(8);
+            int quantidade = (int)nudQuantidade.Value;
+            lblResultado.Text = GerarStringAleatoria(quantidade);
         }
     }
 }

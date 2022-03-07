@@ -30,6 +30,9 @@
         {
             this.btnGerar = new System.Windows.Forms.Button();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.nudQuantidade = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGerar
@@ -52,18 +55,56 @@
             this.lblResultado.Text = "-";
             this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // nudQuantidade
+            // 
+            this.nudQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudQuantidade.Location = new System.Drawing.Point(125, 61);
+            this.nudQuantidade.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.nudQuantidade.Minimum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.nudQuantidade.Name = "nudQuantidade";
+            this.nudQuantidade.Size = new System.Drawing.Size(52, 23);
+            this.nudQuantidade.TabIndex = 2;
+            this.nudQuantidade.Value = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(63, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(177, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Quantidade de caracteres:";
+            // 
             // Form1
             // 
+            this.AcceptButton = this.btnGerar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(302, 288);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.nudQuantidade);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnGerar);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Gerar String Aleatória";
+            ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -71,6 +112,8 @@
 
         private System.Windows.Forms.Button btnGerar;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.NumericUpDown nudQuantidade;
+        private System.Windows.Forms.Label label1;
     }
 }
 
