@@ -17,7 +17,7 @@ namespace GerarStringAleatoria
             InitializeComponent();
         }
 
-        private static string GerarStringAleatoria(int tamanho)
+        private string GerarStringAleatoria(int tamanho)
         {
             Random random = new Random();
             const string dicionario = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -26,7 +26,9 @@ namespace GerarStringAleatoria
                 Enumerable.Repeat(dicionario, tamanho)
               .Select(s => s[random.Next(s.Length)])
               .ToArray());
-
+            
+            btnCopiar.Enabled = true;
+            
             return resultado;
         }
 
@@ -34,6 +36,16 @@ namespace GerarStringAleatoria
         {
             int quantidade = (int)nudQuantidade.Value;
             lblResultado.Text = GerarStringAleatoria(quantidade);
+        }
+
+        private void btnCopiar_Click(object sender, EventArgs e)
+        {
+            if(lblResultado.Text != "-")
+            {
+                Clipboard.SetText(lblResultado.Text);
+                MessageBox.Show("Copiado para a área de transferência:" + Environment.NewLine
+                    + lblResultado.Text, this.Text);
+            }
         }
     }
 }

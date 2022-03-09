@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnGerar = new System.Windows.Forms.Button();
             this.lblResultado = new System.Windows.Forms.Label();
             this.nudQuantidade = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCopiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantidade)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +74,7 @@
             this.nudQuantidade.Name = "nudQuantidade";
             this.nudQuantidade.Size = new System.Drawing.Size(52, 23);
             this.nudQuantidade.TabIndex = 2;
+            this.nudQuantidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudQuantidade.Value = new decimal(new int[] {
             4,
             0,
@@ -88,16 +91,30 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Quantidade de caracteres:";
             // 
+            // btnCopiar
+            // 
+            this.btnCopiar.Enabled = false;
+            this.btnCopiar.Image = ((System.Drawing.Image)(resources.GetObject("btnCopiar.Image")));
+            this.btnCopiar.Location = new System.Drawing.Point(138, 160);
+            this.btnCopiar.Name = "btnCopiar";
+            this.btnCopiar.Size = new System.Drawing.Size(27, 28);
+            this.btnCopiar.TabIndex = 4;
+            this.btnCopiar.UseVisualStyleBackColor = true;
+            this.btnCopiar.Click += new System.EventHandler(this.btnCopiar_Click);
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnGerar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(302, 288);
+            this.Controls.Add(this.btnCopiar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nudQuantidade);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnGerar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -114,6 +131,7 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.NumericUpDown nudQuantidade;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCopiar;
     }
 }
 
