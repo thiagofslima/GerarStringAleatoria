@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnCopiar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAKAAAACgAV1+u6MAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAAnElEQVQ4T2MAAh4gvg7E/4nAr4BY4f///wwwDAIKQAxiNQNxAh6cBcQgdR64DLCACgQBcQYWXAjE
-        IAWToHwnDAOA2BbK/kEA/wTiP0AsCcQoBnhA2QLIzkTHULUgBkjvqAFQYogbAEoMoEQBShy/gJg0A6AC
-        TkAMSp6gZEq6AUgSMC+AMg62DAXDoIyH1QCQn0BZFsQhhIFFAAMPABkPW7UKxKQxAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        nwAAAJ8B8Iwk5wAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACcSURBVDhPYwAC
+        HiC+DsT/icCvgFjh////DDAMAgpADGI1A3ECHpwFxCB1HrgMsIAKBAFxBhZcCMQgBZOgfCcMA4DYFsr+
+        QQD/BOI/QCwJxCgGeEDZAsjORMdQtSAGSO+oAVBiiBsASgygRAFKHL+AmDQDoAJOQAxKnqBkSroBSBIw
+        L4AyDrYMBcOgjIfVAJCfQFkWxCGEgUUAAw8AGQ9btQrEpDEAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

@@ -15,6 +15,13 @@ namespace GerarStringAleatoria
         public Form1()
         {
             InitializeComponent();
+            SetToolTip();
+        }
+
+        private void SetToolTip()
+        {
+            ToolTip tip = new ToolTip();
+            tip.SetToolTip(btnCopiar, "Copiar string para área de transferência.");
         }
 
         private string GerarStringAleatoria(int tamanho)
