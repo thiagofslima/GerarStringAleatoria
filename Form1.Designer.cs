@@ -39,10 +39,11 @@
             // 
             // btnGerar
             // 
+            this.btnGerar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnGerar.Location = new System.Drawing.Point(102, 215);
             this.btnGerar.Name = "btnGerar";
             this.btnGerar.Size = new System.Drawing.Size(98, 33);
-            this.btnGerar.TabIndex = 0;
+            this.btnGerar.TabIndex = 2;
             this.btnGerar.Text = "Gerar";
             this.btnGerar.UseVisualStyleBackColor = true;
             this.btnGerar.Click += new System.EventHandler(this.btnGerar_Click);
@@ -73,7 +74,7 @@
             0});
             this.nudQuantidade.Name = "nudQuantidade";
             this.nudQuantidade.Size = new System.Drawing.Size(52, 23);
-            this.nudQuantidade.TabIndex = 2;
+            this.nudQuantidade.TabIndex = 0;
             this.nudQuantidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudQuantidade.Value = new decimal(new int[] {
             4,
@@ -93,13 +94,15 @@
             // 
             // btnCopiar
             // 
+            this.btnCopiar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCopiar.Enabled = false;
             this.btnCopiar.Image = ((System.Drawing.Image)(resources.GetObject("btnCopiar.Image")));
             this.btnCopiar.Location = new System.Drawing.Point(138, 160);
             this.btnCopiar.Name = "btnCopiar";
             this.btnCopiar.Size = new System.Drawing.Size(27, 28);
-            this.btnCopiar.TabIndex = 4;
+            this.btnCopiar.TabIndex = 1;
             this.btnCopiar.UseVisualStyleBackColor = true;
+            this.btnCopiar.Visible = false;
             this.btnCopiar.Click += new System.EventHandler(this.btnCopiar_Click);
             // 
             // Form1
